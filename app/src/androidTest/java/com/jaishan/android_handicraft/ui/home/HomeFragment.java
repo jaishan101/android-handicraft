@@ -1,4 +1,4 @@
-package com.jaishan.handicraftstore.ui.home;
+package com.jaishan.android_handicraft.ui.home;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,11 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.jaishan.handicraftstore.R;
-import com.jaishan.handicraftstore.adapter.sliderAdapter;
 import com.jaishan.handicraftstore.api.ProductAPI;
 import com.jaishan.handicraftstore.model.Product;
-import com.jaishan.handicraftstore.url.URL;;
-import com.jaishan.handicraftstore.adapter.productAdapter;
+import com.jaishan.handicraftstore.url.URL;
 
 import java.util.List;
 import java.util.Timer;
@@ -27,6 +25,8 @@ import java.util.TimerTask;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+;
 
 public class HomeFragment extends Fragment {
 
@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         viewPager = root.findViewById(R.id.viewPager);
         recyclerView=root.findViewById(R.id.recyclerView);
-        sliderAdapter sliderAdapter = new sliderAdapter(getActivity());
+        com.jaishan.handicraftstore.adapter.sliderAdapter sliderAdapter = new com.jaishan.handicraftstore.adapter.sliderAdapter(getActivity());
 
         viewPager.setAdapter(sliderAdapter);
         final Handler handler = new Handler();
@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
                     Toast.makeText(getContext(), "Toast " + response.code(), Toast.LENGTH_SHORT).show();
                     return;
                 }
-                productAdapter itemAdapter = new productAdapter(getActivity(), response.body());
+                com.jaishan.handicraftstore.adapter.productAdapter itemAdapter = new com.jaishan.handicraftstore.adapter.productAdapter(getActivity(), response.body());
                 recyclerView.setAdapter(itemAdapter);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
