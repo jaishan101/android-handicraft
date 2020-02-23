@@ -1,4 +1,4 @@
-package com.jaishan.android_handicraft.url;
+package com.jaishan.android_handicraft;
 
 import android.content.Intent;
 import android.os.Bundle;
