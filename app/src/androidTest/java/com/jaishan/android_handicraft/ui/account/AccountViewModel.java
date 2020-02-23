@@ -1,4 +1,4 @@
-package com.jaishan.handicraftstore.ui.account;
+package com.jaishan.android_handicraft.ui.account;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
