@@ -1,4 +1,19 @@
-package com.jaishan.android_handicraft.ui.account;
+package com.jaishan.handicraftstore.ui.account;
 
-public class AccountViewModel {
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+
+public class AccountViewModel extends ViewModel {
+
+    private MutableLiveData<String> mText;
+
+    public AccountViewModel() {
+        mText = new MutableLiveData<>();
+        mText.setValue("This is account fragment");
+    }
+
+    public LiveData<String> getText() {
+        return mText;
+    }
 }
