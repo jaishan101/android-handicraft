@@ -1,4 +1,4 @@
-package com.jaishan.handicraftstore.ui.account;
+package com.jaishan.android_handicraft.ui.account;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,13 +16,13 @@ import com.jaishan.handicraftstore.R;
 
 public class AccountFragment extends Fragment {
 
-    private AccountViewModel accountViewModel;
+    private com.jaishan.handicraftstore.ui.account.AccountViewModel accountViewModel;
     private Button btnOpenLoginSignupFragment;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         accountViewModel =
-                ViewModelProviders.of(this).get(AccountViewModel.class);
+                ViewModelProviders.of(this).get(com.jaishan.handicraftstore.ui.account.AccountViewModel.class);
         View root = inflater.inflate(R.layout.fragment_account, container, false);
         //final TextView textView = root.findViewById(R.id.text_account);
         btnOpenLoginSignupFragment = root.findViewById(R.id.btnOpenLoginSignupFragment);
