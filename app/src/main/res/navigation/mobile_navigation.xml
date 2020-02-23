@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_message"
-        android:name="com.jaishan.handicraftstore.ui.message.MessageFragment"
+        android:name="com.jaishan.handicraftstore.ui.message.AboutUsFragment"
         android:label="Message"
         tools:layout="@layout/fragment_message" />
 

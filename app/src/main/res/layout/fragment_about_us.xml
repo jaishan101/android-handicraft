@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.message.AboutUsFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="About Us"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="WThe Handicraft Studio is a curated collection of all things ethnic. From finely woven textiles to intricately crafted wood and metalwork, The Handicraft Studio offers you an exclusive range of India’s most beautiful creations. The rich culture and heritage passed down through many generations of extremely talented weavers and artisans is visible in each exquisite piece of work.
+Here, you’ll find some products that are conventionally traditional, and some with a twist of contemporary!"
+        android:textSize="12dp" />
+
+</LinearLayout>
